@@ -70,6 +70,18 @@ table {
 /* --------------BEGIN GLOBAL STYLES----------------- */
 /* -------------------------------------------------- */
 
+body {
+  height: 100vh;
+  display:grid;
+  grid-gap:20px;
+  grid-template-columns:1fr;
+  grid-template-rows:1fr;
+  grid-template-areas:
+    "header"
+    "nav
+    "main"
+    "footer";
+
 header{
     background-color: var(--midnight-blue);
     color: var(--soft-white);
@@ -105,7 +117,7 @@ nav ul{
     display:flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 nav a{
@@ -156,7 +168,7 @@ hr{
 
 #offerings-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: .5rem;
 }
 
@@ -204,7 +216,7 @@ hr{
 #gallery-grid{
     display: flexbox;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    grid-template-columns: 1fr;
     margin: 0 auto;
     align-content: center;
     padding-bottom: 2rem;
@@ -217,8 +229,8 @@ hr{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 1rem;
-    width: 6rem;
-    height: 7.5rem;
+    width: 20rem;
+    height: 15rem;
 }
 
 .card img{
@@ -228,10 +240,10 @@ hr{
 }
 
 figcaption{
-    font-size: .5rem;
+    font-size: .75rem;
     line-height: 1rem;
     font-style: italic;
-    padding: 5%;
+    padding-left: .5rem;
 }
 
 button{
@@ -280,19 +292,89 @@ footer div{
 }
 
 @media screen and (min-width:600px){
-    main{
-        padding: 0 10rem 1rem 10rem;
-    }
+
 }
 
 @media screen and (min-width:900px){
-    main{
-        padding: 0 5rem 1rem 5rem;
+    #offerings-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
     }
+
+        #gallery-grid{
+        display: flexbox;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        align-content: center;
+        padding-bottom: 2rem;
+    }
+
+    nav ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
 }
 
 @media screen and (min-width:1200px){
-    main{
-        padding: 0 5rem 1rem 5rem;
+
+
+    #offerings-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+
+    .green-card, #green-card-wide{
+        color: var(--linen);
+        align-items: center;
+        background-color: var(--olive-green);
+        border-radius: .5rem;
+        padding: 1rem;
     }
+
+    #gallery-grid{
+        display: flexbox;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        align-content: center;
+        padding-bottom: 2rem;
+    }
+
+    nav ul{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15rem;
+    }
+
+    .card{
+    background-color: var(--soft-white);
+    color: var(--dark-charcoal);
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1rem;
+    width: 12rem;
+    height: 9rem;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption{
+    font-size: .5rem;
+    line-height: 1rem;
+    font-style: italic;
+    padding-left: .5rem;
+}
+
+
 }
