@@ -73,7 +73,6 @@ table {
 body {
   height: 100vh;
   display:grid;
-  grid-gap:20px;
   grid-template-columns:1fr;
   grid-template-rows:1fr;
   grid-template-areas:
@@ -111,6 +110,7 @@ header h3{
 
 nav{
     background-color: var(--champagne-gold);
+    padding: .5rem;
 }
 
 nav ul{
