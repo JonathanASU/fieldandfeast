@@ -122,15 +122,11 @@ hr{
 
 }
 
-
 main{
     background-color: var(--soft-white);
     font-family: var(--font-primary), serif;
-}
-
-#inside-main{
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 10rem;
 }
 
 #about-us h2{
@@ -150,18 +146,17 @@ main{
 h2{
     color: var(--dark-charcoal);
     padding: 1rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-size: 1.5rem;
 }
 
-#offerings-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+#offerings-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
 }
 
-#artisian-provisions{
-
+.green-card, #green-card-wide{
     color: var(--linen);
     align-items: center;
     background-color: var(--olive-green);
@@ -169,77 +164,29 @@ h2{
     padding: 1rem;
 }
 
-#artisian-provisions h3{
+.green-card, #green-card-wide h3{
     font-size: 1.25rem;
-    font-weight: bold;
+    margin-bottom: .5rem;
 }
 
-#artisian-provisions p{
+.green-card, #green-card-wide p{
     font-size: .75rem;
     line-height: 1.5;
-    padding-top: .75rem;
 }
 
-#exclusive-experiences{
-
-    color: var(--linen);
-    align-items: center;
-    background-color: var(--olive-green);
-    border-radius: .5rem;
-    padding: 1rem;
-}
-
-#exclusive-experiences h3{
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-#exclusive-experiences p{
-    font-size: .75rem;
-    line-height: 1.5;
-    padding-top: .75rem;
-}
-
-#monthly-basket{
-    grid-column: span 2;
-}
-
-#monthly-basket{
-
-    color: var(--linen);
-    align-items: center;
-    background-color: var(--olive-green);
-    border-radius: .5rem;
-    padding: 1rem;
-}
-
-#monthly-basket h3{
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-#monthly-basket p{
-    font-size: .75rem;
-    line-height: 1.5;
-    padding-top: .75rem;
-}
-
-#monthly-basket ul{
-    font-size: .75rem;
-    line-height: 1.5;
-    padding-left: 1.25rem;
-    padding-top: .5rem;
+#green-card-wide ul{
+    padding-left: 1.5rem;
+    margin-top: .5rem;
     list-style-type: disc;
-}
-
-#green-squares hr{
-    margin-top: 2rem;
+    font-size: .65rem;
+    line-height: 1.5;
+    margin-bottom: .25rem;
 }
 
 #gallery-intro h2{
     color: var(--dark-charcoal);
     padding: 1rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     font-size: 1.5rem;
 }
 
@@ -250,15 +197,13 @@ h2{
     font-size: .75rem;
 }
 
-#gallery{
-      display: grid;
-      grid-template-columns: repeat;
-      gap: 1.5rem;
+#gallery-intro{
+    display: inline-block;
+    gap: 5px;
+    padding: 2px;
 }
 
 #card1{
-    display: flexbox;
-    align-items: center;
     background-color: var(--soft-white);
     color: var(--dark-charcoal);
     border-radius: .5rem;
@@ -270,8 +215,6 @@ h2{
 }
 
 #card2{
-    display: flexbox;
-    align-items: center;
     background-color: var(--soft-white);
     color: var(--dark-charcoal);
     border-radius: .5rem;
@@ -283,8 +226,6 @@ h2{
 }
 
 #card3{
-    display: flexbox;
-    align-items: center;
     background-color: var(--soft-white);
     color: var(--dark-charcoal);
     border-radius: .5rem;
@@ -296,8 +237,6 @@ h2{
 }
 
 #card4{
-    display: flexbox;
-    align-items: center;
     background-color: var(--soft-white);
     color: var(--dark-charcoal);
     border-radius: .5rem;
@@ -309,8 +248,6 @@ h2{
 }
 
 #card5{
-    display: flexbox;
-    align-items: center;
     background-color: var(--soft-white);
     color: var(--dark-charcoal);
     border-radius: .5rem;
@@ -327,9 +264,6 @@ figcaption{
     font-style: italic;
     padding: 5%;
 }
-
-
-
 
 button{
     text-align: center;
