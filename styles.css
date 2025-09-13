@@ -183,27 +183,31 @@ h2{
     margin-bottom: .25rem;
 }
 
-#gallery-intro h2{
+#gallery h2{
     color: var(--dark-charcoal);
     padding: 1rem;
     padding-top: 1rem;
     font-size: 1.5rem;
 }
 
-#gallery-intro p{
+#gallery p{
     color: var(--dark-charcoal);
     line-height: 1.5;
     padding: 0 1rem 2rem 1rem;
     font-size: .75rem;
 }
 
-#gallery-intro{
-    display: inline-block;
-    gap: 5px;
-    padding: 2px;
+#gallery-grid{
+    display: flexbox;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: .5rem;
+    margin: 0 auto;
+    justify-items: center;
+    padding-bottom: 2rem;
 }
 
-#card1{
+.card{
     background-color: var(--soft-white);
     color: var(--dark-charcoal);
     border-radius: .5rem;
@@ -214,48 +218,10 @@ h2{
     height: 7.5rem;
 }
 
-#card2{
-    background-color: var(--soft-white);
-    color: var(--dark-charcoal);
-    border-radius: .5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 1rem;
-    width: 6rem;
-    height: 7.5rem;
-}
-
-#card3{
-    background-color: var(--soft-white);
-    color: var(--dark-charcoal);
-    border-radius: .5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 1rem;
-    width: 6rem;
-    height: 7.5rem;
-}
-
-#card4{
-    background-color: var(--soft-white);
-    color: var(--dark-charcoal);
-    border-radius: .5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 1rem;
-    width: 6rem;
-    height: 7.5rem;
-}
-
-#card5{
-    background-color: var(--soft-white);
-    color: var(--dark-charcoal);
-    border-radius: .5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 1rem;
-    width: 6rem;
-    height: 7.5rem;
+.card img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 figcaption{
@@ -298,9 +264,10 @@ address a{
     text-decoration: none;
 }   
 
-#social-media{
+footer div{
     display:flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     padding-bottom: 1rem;
     margin: 0 auto;
